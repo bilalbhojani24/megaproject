@@ -31,6 +31,11 @@
 <li>Design UI using HTML/CSS/BS</li>
 <li>Start logic using JS/jQuery</li>
 </ul>
+
+<h2>Color codes<h2>
+<img src="\assets\images\color_codes.jpg"
+     alt=" "/>
+
 Note : we will not copy anything from anywhere. We can do it.
 Pages : 8
 
