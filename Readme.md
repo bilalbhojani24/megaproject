@@ -33,14 +33,15 @@
 </ul>
 
 <h2>Color codes<h2>
-<img src="assets\images\color_codes.jpg"/>
+<img src="assets/images/color_codes.jpg"/>
 
 <br>
 
-Note : we will not copy anything from anywhere. We can do it.
-Pages : 8
+Note : we will not copy anything from anywhere. We can do it.<br>
+Pages : 8<br>
+<br>
 
-Home 
+<p>Home
 Nav : Home, projects, contact, login / sign – B
 Mega project – content
-Card – about each project
+Card – about each project</p>
