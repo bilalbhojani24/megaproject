@@ -1,4 +1,13 @@
 /*This is style page*/
+@font-face {
+    font-family: 'andromedamedium';
+    src: url('andromeda-er2n-webfont.woff2') format('woff2'),
+         url('andromeda-er2n-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body{
     margin:0;
     padding:0;
@@ -7,14 +16,14 @@ body{
 }
 /*navbar*/
 .navbar-header{
-    background-color: #66FCF1;
+    background-color: rgb(0, 0, 0);
     z-index: 1;
 }
 .navbar-header .navbar-brand{
     text-transform: uppercase;
-    color:#1f2833;
+    color:#66FCF1;
     font-weight: 400;
-    font-family: 'Piedra', cursive;
+    font-family: 'andromedamedium';
     font-size: 30px;
 }
 
@@ -39,16 +48,16 @@ body{
 
 /*footer*/
 footer{
-    background-color: #45A29E;
-    color:#66FCF1
+    background-color: rgb(0, 0, 0);
+    color: #45a29e;;
 }
 
 footer .footer-left p{
     text-transform: uppercase;
     font-size: 20px;
-    color:#1f2833;
+    color:#66FCF1;
     font-weight: 400;
-    font-family: 'Piedra', cursive; 
+    font-family: 'andromedamedium'; 
 }
 footer .footer-left a{
     display: block;
@@ -56,11 +65,11 @@ footer .footer-left a{
     cursor: pointer;
     margin:5px 0;
     font-size: 18px;
-    color: #66FCF1;
+    color: #63f3ec;
     text-transform: capitalize  ;
 }
 footer .footer-left a:hover{
-    color: #1f2833;
+    color: #6e8180;
 }
 footer .footer-left-bottom a{
     display: inline;
@@ -95,8 +104,8 @@ footer .footer-left-bottom .fa {
   }
   
   .fa-youtube {
-    background: #bb0000;
-    color: white;
+    background: #ca0808;
+    color: rgb(255, 255, 255);
   }
 
 /*footer-right*/
@@ -104,15 +113,15 @@ footer .footer-left-bottom .fa {
 footer .footer-right p{
     text-transform: uppercase;
     font-size: 20px;
-    color:#1f2833;
+    color:#66FCF1;
     font-weight: 400;
-    font-family: 'Piedra', cursive; 
+    font-family: 'andromedamedium'; 
 }
 footer .footer-right form input{
     width:100%;
     margin:10px 10px;
     padding:5px 10px;
-    background-color: #66FCF1;
+    background-color: rgb(48, 122, 117);
     border:1px solid #66FCF1;
     color: #1f2833;
     outline: none;
