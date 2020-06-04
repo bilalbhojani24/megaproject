@@ -33,7 +33,7 @@
                     <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="#" class="nav-link ">
-                        <i class="fa fa-sign-in" style="margin-right: 5px;"></i>Singup</a></li>
+                            <i class="fa fa-sign-in" style="margin-right: 5px;"></i>Singup</a></li>
                     <!-- <li class="nav-item"><a href="#" class="nav-link">Lo gin</a></li> -->
                 </ul>
             </div>
@@ -41,7 +41,7 @@
     </nav>
 
     <div class="main">
-        <div class="container todo-main" >
+        <div class="container todo-main">
             <div class="row">
                 <div class="col-12 col-sm-5 ">
                     <h2>About BMI Calculator</h2>
@@ -81,7 +81,14 @@
                                 <label>Result</label>
                             </div>
                             <div class="col-12 col-sm-7">
-                                <input type="text" name="Result" id="Result">
+                                <input type="text" name="Result" id="Result" readonly>
+                            </div>
+                        </div>
+                        <div class="row pb-5 align-content-center">
+                            <div class="col-12">
+                                <button class="btn btn-primary" style="padding: 5px 20px;" onclick="bmi()">
+                                        Submit
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -130,8 +137,6 @@
             </div>
         </div>
     </footer>
-
-
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -140,6 +145,15 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script>
+        function bmi() {
+            var height = Number(document.getElementById("height").value);
+            var weight = Number(document.getElementById("weight").value);
+            var result = weight / (height * height);
+            document.getElementById("Result").value = result;
+        }
+    </script>
 </body>
 
 </html>
