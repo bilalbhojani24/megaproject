@@ -16,7 +16,7 @@ body{
 }
 /*navbar*/
 .navbar-header{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.815);
     z-index: 1;
 }
 .navbar-header .navbar-brand{
@@ -48,7 +48,7 @@ body{
 
 /*footer*/
 footer{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.829);
     color: #45a29e;;
 }
 
