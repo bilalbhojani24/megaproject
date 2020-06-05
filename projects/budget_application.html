@@ -33,14 +33,14 @@
                     <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="#" class="nav-link ">
-                        <li class="nav-item"><a href="#" class="nav-link " data-toggle="modal" data-target="#signupmodal">
+                    <li class="nav-item"><a href="#" class="nav-link " data-toggle="modal" data-target="#signupmodal">
                             <i class="fa fa-sign-in" style="margin-right: 5px;"></i>Singup</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-     <!--Modal for signup-->
-     <div class="modal" role="dialog" id="signupmodal">
+    <!--Modal for signup-->
+    <div class="modal" role="dialog" id="signupmodal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -94,7 +94,7 @@
                 <div class="modal-footer">
                     <div class="row justify-content-center">
                         <div class="col-6 col-sm-6 col-lg-6">
-                            <button class="btn" >SignUp</button>
+                            <button class="btn">SignUp</button>
                         </div>
                         <div class="col-6 col-sm-6 col-lg-6">
                             <button class="btn " data-dismiss="modal">Cancel</button>
@@ -107,7 +107,7 @@
     <div class="budget-main">
         <div class="container ">
             <div class="row">
-                <div class="col-12 col-sm-5">
+                <div class="col-12">
                     <h2>About Budget calculator</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ullam nesciunt quos quia ab quae
                         corporis distinctio eveniet possimus quibusdam repudiandae maxime ipsam illo odio laudantium,
@@ -121,51 +121,56 @@
                         eveniet
                         quibusdam vitae, perferendis veritatis et ut culpa nihil perspiciatis, aliquid eum ea.</p>
                 </div>
-                <div class="col-12 col-sm-6 offset-sm-1">
-                    <h2 style="padding-bottom: 25px;">BUDGET calculator</h2>
-                    <div class="form">
-                        <div class="row pb-4">
-                            <div class="col-12 col-sm-12">
-                                <label for="budget">Budget</label>
-                                 <input type="text" name="budget" id="budget" placeholder="Enter your budget in rupees">
+            </div>
+            <hr>
+            <div class="col-12 col-sm-6 offset-sm-3">
+                <h2 style="padding-bottom: 25px;">BUDGET calculator</h2>
+                <div class="form">
+                    <div class="row pb-4">
+                        <div class="col-12 col-sm-12">
+                            <label for="budget">Budget</label>
+                            <input type="text" name="budget" class="form-control" id="budget"
+                                placeholder="Enter your budget in rupees">
+                        </div>
+                    </div>
+                    <div class="row pb-4">
+                        <div class="col-12 col-sm-6">
+                            <label for="budget">Indiviual Item</label>
+                            <input type="text" name="item" class="form-control" id="item"
+                                placeholder="Item name e.g: milk">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <label for="budget">Amount</label>
+                            <input type="text" name="expense" class="form-control" id="expense"
+                                placeholder="Amount in rs.">
+                        </div>
+                    </div>
+                    <div class="row pb-4">
+                        <div class="col-12 col-sm-12">
+                            <button class="btn btn-block custom-btn btn-primary">ADD</button>
+                        </div>
+                    </div>
+                    <div class="row pb-4">
+                        <div class="col-12 col-sm-12 list">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>List Item</h3>
                                 </div>
-                        </div>
-                        <div class="row pb-4">
-                            <div class="col-12 col-sm-6">
-                                <label for="budget">Indiviual Item</label>
-                                 <input type="text" name="item" id="item" placeholder="Item name e.g: milk">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <label for="budget">Amount</label>
-                                 <input type="text" name="expense" id="expense" placeholder="Amount in rs.">
-                            </div>
-                        </div>
-                        <div class="row pb-4">
-                            <div class="col-12 col-sm-12">
-                               <button class="btn btn-block btn-primary">ADD</button>
-                               </div>
-                        </div>
-                        <div class="row pb-4">
-                            <div class="col-12 col-sm-12 list">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3>List Item</h3>
-                                    </div>
-                                    <div class="card-body">
-                                        Here list will be displayed from the expense and amount item. It will work like To-DO
-                                    </div>
+                                <div class="card-body">
+                                    Here list will be displayed from the expense and amount item. It will work like
+                                    To-DO
                                 </div>
                             </div>
                         </div>
-                        <div class="row pb-5 ">
-                            <div class="col-12 col-sm-6">
-                                <label for="budget">Total Balance</label>
-                                 <input type="text" name="balance" id="balance" readonly>
-                            </div>
-                            <div class="col-12 col-sm-6 ">
-                                <label for="budget">Total Expense</label>
-                                 <input type="text" name="expense" id="expense" readonly>
-                            </div>
+                    </div>
+                    <div class="row pb-5 ">
+                        <div class="col-12 col-sm-6">
+                            <label for="budget">Total Balance</label>
+                            <input type="text" class="form-control" name="balance" id="balance" readonly>
+                        </div>
+                        <div class="col-12 col-sm-6 ">
+                            <label for="budget">Total Expense</label>
+                            <input type="text" class="form-control" name="expense" id="expense" readonly>
                         </div>
                     </div>
                 </div>

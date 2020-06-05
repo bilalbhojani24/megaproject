@@ -24,6 +24,16 @@
     color:gray
 }
 .budget-main .form .card .card-header{
-    background-color: orange;
+    background-color: #45a29e;
     color:white
+}
+
+.custom-btn{
+    color: #66fcf1 !important;
+    background-color: #1f2833 !important;
+    border-color: #66fcf1 !important;
+    box-shadow: 2px 2px;
+}
+.custom-btn:hover{
+    color: #45a29e !important;
 }
