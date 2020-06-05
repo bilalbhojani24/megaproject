@@ -1,0 +1,51 @@
+.main{
+    background-color: #dbdcdb;
+}
+.main .todo-main h2{
+    color:#1f2833;
+    text-transform:uppercase;
+    text-align: center;
+    padding:25px 0 0 0;
+    /* font-family: ; not sure yet */
+}
+.todo-main p{
+    text-align: justify;
+    padding:20px 10px;
+}
+.todo-main .form{
+    padding:50px 10px 0 10px;
+}
+.todo-main .form input,select{
+    width: 100%;
+    padding:5px 5px;
+    text-transform: none;
+}
+.todo-main .form ::placeholder{
+    color:gray
+}
+
+.head-ing{ 
+    text-align: center; 
+    /* margin: 5%;  */
+    font-size: 3rem;
+ } 
+   
+ #list_item{ 
+   text-align: left;
+   font-size: 2rem; 
+   list-style: none;
+   /* background-color: #c6cccc  */
+ }
+
+ .note{
+     background-color: #ffffff;
+     border-radius: 5px;
+     padding: 0px 10px;
+     margin-top: 5px;
+ }
+   
+.note:hover{ 
+   color:#45a29e;  
+   transition: 0.5s ease; 
+   cursor: pointer; 
+ } 

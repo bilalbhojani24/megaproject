@@ -41,7 +41,7 @@
     </nav>
 
     <div class="main">
-        <div class="container todo-main">
+        <div class="container BMI-main">
             <div class="row">
                 <div class="col-12 col-sm-5 ">
                     <h2>About BMI Calculator</h2>
@@ -60,38 +60,37 @@
                 <div class="col-12 col-sm-6 offset-sm-1">
                     <h2 style="padding-bottom: 45px;">BMI calculator</h2>
                     <div class="form">
-                        <div class="row pb-4">
+                        <div class="row pb-3">
                             <div class="col-12 col-sm-3">
                                 <label>Height</label>
                             </div>
-                            <div class="col-12 col-sm-9">
-                                <input type="text" name="height" id="height" placeholder="Height in cm">
+                            <div class="col-12 col-sm-7">
+                                <input type="text" name="height" id="height" placeholder="Height in Feet">
                             </div>
                         </div>
-                        <div class="row pb-4">
+                        <div class="row pb-3">
                             <div class="col-12 col-sm-3">
                                 <label>Weight</label>
                             </div>
-                            <div class="col-12 col-sm-9">
+                            <div class="col-12 col-sm-7">
                                 <input type="text" name="weight" id="weight" placeholder="Weight in Kg">
                             </div>
                         </div>
-                        <div class="row pb-4">
-                            <div class="col-12">
-                                <button class="btn btn-primary btn-block" style="padding: 5px 20px;" onclick="bmi()">
-                                        Calculate BMI
-                                </button>
-                            </div>
-                        </div>
-                        <div class="row pb-4">
+                        <div class="row pb-5">
                             <div class="col-12 col-sm-3">
                                 <label>Result</label>
                             </div>
-                            <div class="col-12 col-sm-9">
+                            <div class="col-12 col-sm-7">
                                 <input type="text" name="Result" id="Result" readonly>
                             </div>
                         </div>
-                        
+                        <div class="row pb-5">
+                            <div class="col-12">
+                                <button class="btn btn-primary" style="padding: 5px 20px;" onclick="bmi()">
+                                        Submit
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,7 +120,7 @@
             </div>
             <div class="col-10 offset-1 offset-sm-0 col-sm-4 footer-right pt-5 pb-sm-5 order-sm-last">
                 <p>Enquiry Form</p>
-                <form>
+                <form action="">
                     <div class="row">
                         <input type="text" name="name" id="name" placeholder="Full Name">
                     </div>
@@ -151,6 +150,10 @@
         function bmi() {
             var height = Number(document.getElementById("height").value);
             var weight = Number(document.getElementById("weight").value);
+            //converting height from feet to meters
+            height = height/3.2808;
+
+            //calculating BMI
             var result = weight / (height * height);
             document.getElementById("Result").value = result;
         }
