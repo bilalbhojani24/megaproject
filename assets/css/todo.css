@@ -62,3 +62,34 @@
        margin-top: 10px;
     }
   }
+
+.fa-trash-o{
+    opacity : 0;
+    cursor: pointer;
+}
+.fa-check{
+    opacity : 0;
+    cursor: pointer;
+}
+
+.taskconatiner:hover .fa-trash-o{
+    opacity: 1;
+    color:red;
+}
+.taskconatiner:hover .fa-check{
+    opacity: 1;
+    color:green;
+}
+.taskconatiner{
+    border-bottom: 1px solid #adadad;
+    font-size: 20px;
+    margin:5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.task{
+    width:80%;
+}
+
