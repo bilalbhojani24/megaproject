@@ -136,5 +136,43 @@ footer .footer-right form button{
     color:white;
 }
 
+/*Modal css*/
+.modal .modal-header{
+    background-color: #0b0c10;
+    color: #63f3ec;
+    border: 1px solid #0b0c10;
+}
+.modal .modal-header button{
+    color:#63f3ec;
+
+}
+.modal .modal-body {
+    background-color: #1f2833;
+    
+}
+.modal .modal-body input{
+    width: 100%;
+    background-color: rgb(48, 122, 117);
+    border:1px solid #66FCF1;
+    color: #66FCF1;
+    outline: none;
+    padding:5px 5px;
+}
+.modal .modal-body label{
+    color:#66fcf1;
+}
+.modal .modal-footer{
+    background-color: #0b0c10;
+    border:1px solid #0b0c10
+}
+.modal .modal-footer button{
+    background-color: #6e8180;
+    text-transform: uppercase;
+    padding:0 15px;
+}
+.modal .modal-footer button{
+    color:#66FCF1
+}
+
 
 
