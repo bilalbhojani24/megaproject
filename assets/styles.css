@@ -16,7 +16,7 @@ body{
 }
 /*navbar*/
 .navbar-header{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0,0.7);
     z-index: 1;
 }
 .navbar-header .navbar-brand{
@@ -34,8 +34,7 @@ body{
     text-transform: uppercase;
 }
 .navbar-header #Navbar a:hover{
-    color:#45A29E;
-    color: #1f2833;
+    color: #66FCF1;
 }
 .navbar-header ul li{
     text-align: center;
@@ -48,7 +47,7 @@ body{
 
 /*footer*/
 footer{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0,0.8);
     color: #45a29e;;
 }
 
@@ -69,7 +68,7 @@ footer .footer-left a{
     text-transform: capitalize  ;
 }
 footer .footer-left a:hover{
-    color: #6e8180;
+    color: #66FCF1;
 }
 footer .footer-left-bottom a{
     display: inline;
