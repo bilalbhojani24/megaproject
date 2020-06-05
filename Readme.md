@@ -4,13 +4,13 @@
 
 <h2>Mini applications:</h2>
 <ul>
-<li>TO-DO application - k</li>
-<li>Basic calculator - B</li>
-<li>Tip calculator - B</li>
-<li>BMI calculator - K</li>
+<li>TO-DO application - k  done ui+js</li>
+<li>Basic calculator - B done ui</li>
+<li>Tip calculator - B done ui</li>
+<li>BMI calculator - K done ui+js</li>
 <li>Permanent Digital clock on every page</li>
-<li>Login and sign on navigation (onClick it will generate the modal)</li>
-<li>Budget application (Bit diificult but we can try) - B</li>
+<li>Login and sign on navigation (onClick it will generate the modal) done ui</li>
+<li>Budget application - B done ui</li>
 <li>School grade calculator - K</li>
 </ul>
 
