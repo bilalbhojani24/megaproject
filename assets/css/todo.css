@@ -12,17 +12,6 @@
     text-align: justify;
     padding:20px 10px;
 }
-.todo-main .form{
-    padding:50px 10px 0 10px;
-}
-.todo-main .form input,select{
-    width: 100%;
-    padding:5px 5px;
-    text-transform: none;
-}
-.todo-main .form ::placeholder{
-    color:gray
-}
 
 .head-ing{ 
     text-align: center; 
