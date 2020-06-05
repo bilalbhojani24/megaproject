@@ -44,4 +44,5 @@ Pages : 8<br>
 <p>Home
 Nav : Home, projects, contact, login / sign – B
 Mega project – content
-Card – about each project</p>
+Card – about each project
+git ignore file has some settings files from my system</p>
