@@ -1,0 +1,41 @@
+.calculator-main{
+    background-color: #dbdcdb;
+}
+.calculator-main  h2{
+    color:#1f2833;
+    text-transform:uppercase;
+    text-align: center;
+    padding:25px 0 0 0;
+    /* font-family: ; not sure yet */
+}
+.calculator-main p{
+    text-align: justify;
+    padding:20px 10px;
+}
+.calculator-main .form{
+    padding:10px 10px 0 10px;
+}
+.calculator-main .card input{
+    width: 100%;
+    padding:10px 10px;
+    font-size: 20px;
+    text-transform: none;
+    border:none;
+    background-color: rgb(199, 199, 199);
+}
+.calculator-main .form ::placeholder{
+    color:gray
+}
+.calculator-main .card .card-body .card-body-output{
+    width: 100%;
+}
+.calculator-main .card .card-body .card-body-button{
+    text-align: center;
+}
+.calculator-main .card .card-body .card-body-button .col-3{
+    padding: 10px 10px;
+    /* cursor: pointer; */
+}
+.calculator-main .card .card-body .card-body-button .col-3 button{ 
+    
+}
