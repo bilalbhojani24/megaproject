@@ -14,9 +14,9 @@
 }
 
 .head-ing{ 
-    text-align: center; 
-    /* margin: 5%;  */
+    text-align: center;
     font-size: 3rem;
+    padding:25px 0;
  } 
    
  #list_item{ 
@@ -25,25 +25,8 @@
    list-style: none;
    padding: 0;
    padding-bottom: 5px;
-   background-color: #f0f5f5;
    border-radius: 5px;
- }
-
- .note{
-     background-color: #adadad;
-     border-radius: 5px;
-     padding: 0px 10px;
-     margin-top: 5px;
-     margin-left: 5px;
-     margin-right: 5px;
- }
-   
-.note:hover{ 
-   color:#45a29e;  
-   transition: 0.5s ease; 
-   cursor: pointer; 
  } 
-
  .row .col-12 .row .col-12 .row .custom-input{
      padding-right: 0px;
  }
@@ -61,49 +44,6 @@
  .row .col-12 .row .col-12 .row .custom-btn .btn-primary:hover{
     color: #45a29e;
 }
-
- @media screen and (max-width: 576px) {
-    .row .col-12 .row .col-12 .row .custom-input{
-        padding-right: 15px;
-    }
-   
-    .row .col-12 .row .col-12 .row .custom-btn{
-       padding-left: 15px;
-       margin-top: 10px;
-    }
-  }
-
-.fa-trash-o{
-    opacity : 0;
-    cursor: pointer;
-}
-.fa-check{
-    opacity : 0;
-    cursor: pointer;
-}
-
-.taskconatiner:hover .fa-trash-o{
-    opacity: 1;
-    color:#45a29e;
-}
-.taskconatiner:hover .fa-check{
-    opacity: 1;
-    color:#66fcf1;
-}
-
-@media screen and (max-width: 576px) {
-    .taskconatiner .fa-trash-o{
-        opacity: 1;
-        color:#45a29e;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .taskconatiner .fa-check{
-        opacity: 1;
-        color:#66fcf1;
-    }
-}
-
 .taskconatiner{
     border-bottom: 1px solid #1f2833;
     font-size: 20px;
@@ -117,8 +57,38 @@
     width:80%;
     color: #45a29e;
 }
-.row .col-12 .row .col-12 .mt-4 .jumbotron{
-    background-color: #1f2833;
-    color: #66fcf1;
-    padding-bottom: 10px;
+.fa-trash-o{
+    opacity : 0;
+    cursor: pointer;
 }
+.fa-check{
+    opacity : 0;
+    cursor: pointer;
+}
+
+.taskconatiner:hover .fa-trash-o{
+    opacity: 1;
+    color:#45a29e;
+    color:red;
+}
+.taskconatiner:hover .fa-check{
+    opacity: 1;
+    color:#66fcf1;
+    color:green
+}
+ @media screen and (max-width: 576px) {
+    .row .col-12 .row .col-12 .row .custom-input{
+        padding-right: 15px;
+    }
+   
+    .row .col-12 .row .col-12 .row .custom-btn{
+       padding-left: 15px;
+       margin-top: 10px;
+    }
+  }
+
+
+
+
+
+

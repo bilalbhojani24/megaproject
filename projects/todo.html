@@ -33,14 +33,14 @@
                     <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="#" class="nav-link ">
-                        <li class="nav-item"><a href="#" class="nav-link " data-toggle="modal" data-target="#signupmodal">
+                    <li class="nav-item"><a href="#" class="nav-link " data-toggle="modal" data-target="#signupmodal">
                             <i class="fa fa-sign-in" style="margin-right: 5px;"></i>Singup</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-     <!--Modal for signup-->
-     <div class="modal" role="dialog" id="signupmodal">
+    <!--Modal for signup-->
+    <div class="modal" role="dialog" id="signupmodal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -94,7 +94,7 @@
                 <div class="modal-footer">
                     <div class="row justify-content-center">
                         <div class="col-6 col-sm-6 col-lg-6">
-                            <button class="btn" >SignUp</button>
+                            <button class="btn">SignUp</button>
                         </div>
                         <div class="col-6 col-sm-6 col-lg-6">
                             <button class="btn " data-dismiss="modal">Cancel</button>
@@ -135,25 +135,27 @@
                     <div class="row justify-content-center">
                         <div class="col-12">
                             <form class="row justify-content-center">
-                                <!-- <div class="row"> -->
-                                    <div class="custom-input col-12 col-sm-4">
-                                        <input type="text" class="form-control" placeholder="todo-item" id="box" />
-                                    </div>
-                                <!-- </div> -->
-                                <!-- <div class="row"> -->
-                                    <div class="custom-btn col-4 col-sm-2">
-                                        <input type="button" class="btn btn-primary form-control" value="add"
-                                            onclick="add_item()" />
-                                    </div>
-                                <!-- </div> -->
+                                <div class="custom-input col-12 col-sm-4">
+                                    <input type="text" class="form-control" placeholder="What are you planning to do?"
+                                        id="box" />
+                                </div>
+                                <div class="custom-btn col-4 col-sm-2 ml-sm-2">
+                                    <input type="button" class="btn btn-primary form-control" value="ADD"
+                                        onclick="add_item()" />
+                                </div>
                             </form>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mt-5">
                         <div class="col-12 col-sm-6 offset-sm-3 pb-5">
-                            <ul id="list_item" class="mt-4">
-                                <h2 class="jumbotron">Tasks</h2>
-                            </ul>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h1>TASK</h1>
+                                </div>
+                                <div class="card-body">
+                                    <ul id="list_item" class=""></ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

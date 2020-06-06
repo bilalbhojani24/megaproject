@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Piedra&family=Tenali+Ramakrishna&display=swap"
         rel="stylesheet">
 
+     <script src="../assets/js/tip.js"></script>   
+
 </head>
 
 <body>
@@ -135,16 +137,16 @@
                         </div>
                         <div class="row pb-3">
                             <div class="col-12 col-sm-5">
-                                <label for="billamount">Number of Guest</label>
+                                <label for="Guestnumber">Number of Guest</label>
                             </div>
                             <div class="col-12 col-sm-7">
-                                <input type="text" name="billamount" class="form-control" id="billamount"
+                                <input type="text" name="guest" class="form-control" id="guest"
                                     placeholder="mention number of guest">
                             </div>
                         </div>
                         <div class="row pb-3">
                             <div class="col-12 col-sm-5">
-                                <label for="billamount">Service type</label>
+                                <label for="Quality">Service type</label>
                             </div>
                             <div class="col-12 col-sm-7">
                                 <select name="tip" class="form-control" id="tip">
@@ -164,7 +166,7 @@
                         </div>
                         <div class="row pb-5">
                             <div class="col-12 col-sm-12">
-                                <button class="btn btn-block custom-btn btn-primary"><i class="fa fa-calculator"
+                                <button class="btn btn-block custom-btn btn-primary" onclick="calculatetip()"><i class="fa fa-calculator"
                                         aria-hidden="true"></i> Calculate</button>
                             </div>
                         </div>
