@@ -23,3 +23,12 @@
 .tipCalculator-main .form ::placeholder{
     color:grey
 }
+.row .col-12 .custom-btn{
+    color: #66fcf1;
+    background-color: rgba(0, 0, 0,0.7);
+    border-color: #66fcf1;
+    box-shadow: 2px 2px;
+}
+.row .col-12 .custom-btn:hover{
+    color: #45a29e;
+}
