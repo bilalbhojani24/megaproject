@@ -85,6 +85,16 @@
        padding-left: 15px;
        margin-top: 10px;
     }
+
+    /* dont touch hover doesnt work on mobile devices and tablets -_- */
+    .fa-trash-o{
+        opacity : 1;
+        cursor: pointer;
+    }
+    .fa-check{
+        opacity : 1;
+        cursor: pointer;
+    }
   }
 
 
