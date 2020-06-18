@@ -13,6 +13,8 @@
     <!--fontawesome link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!--script js-->
+    <script src="../assets/js/grade.js"></script>
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Piedra&family=Tenali+Ramakrishna&display=swap"
         rel="stylesheet">
@@ -108,7 +110,7 @@
         <div class="container todo-main">
             <div class="row">
                 <div class="col-12 col-sm-12 ">
-                    <h2>About TODO</h2>
+                    <h2>Grade Calculator</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ullam nesciunt quos quia ab quae
                         corporis distinctio eveniet possimus quibusdam repudiandae maxime ipsam illo odio laudantium,
                         saepe
@@ -125,18 +127,26 @@
             <hr>
             <div class="row">
                 <div class="col-12 col-sm-6">
-                    <h2 style="padding-bottom: 45px;">grades calculator</h2>
+                    <h2 style="padding-bottom: 45px;">grade calculator</h2>
                     <div class="form">
                         <div class="row pb-3">
-                            <div class="col-12 col-sm-3 my-auto">
-                                <label>Subject Name</label>
+                            <div class="col-12 col-sm-4 my-auto">
+                                <label>Number of subject</label>
                             </div>
                             <div class="col-12 col-sm-7">
-                                <input type="text" class="form-control" name="sub_name" id="sub_name" placeholder="Subject Name">
+                                <input type="text" class="form-control" name="sub_name" id="subnumber" placeholder="Example : 4">
                             </div>
                         </div>
                         <div class="row pb-3">
-                            <div class="col-12 col-sm-3 my-auto">
+                            <div class="col-12 col-sm-4 my-auto">
+                                <label>Subject Name</label>
+                            </div>
+                            <div class="col-12 col-sm-7">
+                                <input type="text" class="form-control" name="sub_name" id="subname" placeholder="Subject Name">
+                            </div>
+                        </div>
+                        <div class="row pb-3">
+                            <div class="col-12 col-sm-4 my-auto">
                                 <label>Score</label>
                             </div>
                             <div class="col-12 col-sm-7">
@@ -144,7 +154,7 @@
                             </div>
                         </div>
                         <div class="row pb-5">
-                            <div class="col-12 col-sm-3 my-auto">
+                            <div class="col-12 col-sm-4 my-auto">
                                 <label>Result</label>
                             </div>
                             <div class="col-12 col-sm-7">
@@ -153,7 +163,7 @@
                         </div>
                         <div class="row pb-5">
                             <div class="col-12">
-                                <button class="btn btn-primary custom-btn" style="padding: 5px 20px;">
+                                <button class="btn btn-primary custom-btn" style="padding: 5px 20px;" onclick="gradecala()">
                                         Calculate
                                 </button>
                             </div>
@@ -161,11 +171,11 @@
                     </div>
                 </div>
                     <div class="col-12 col-sm-6 pb-5">
-                        <ul id="list_item" class="mt-4">
+                        <div id="subject-item" class="mt-4">
                             <h2 class="jumbotron">GRADES</h2>
-                            <div class="GradeContainer"><li class="grades">Subject 1</li><h4>A</h4></div>
-                            <div class="GradeContainer"><li class="grades">Subject 2</li><h4>F</h4></div>
-                        </ul>
+                            <!-- <div class="GradeContainer"><li class="grades">Subject 1</li><h4>A</h4></div>
+                            <div class="GradeContainer"><li class="grades">Subject 2</li><h4>F</h4></div> -->
+                            </div>
                     </div>
                 </div>
             </div>
