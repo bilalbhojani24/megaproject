@@ -13,6 +13,8 @@
     <!--fontawesome link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!--script.js-->
+    <script src="../assets/js/bmi.js"></script>
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Piedra&family=Tenali+Ramakrishna&display=swap"
         rel="stylesheet">
@@ -129,7 +131,7 @@
                                 <label>Height</label>
                             </div>
                             <div class="col-12 col-sm-7">
-                                <input type="text" class="form-control" name="height" id="height" placeholder="Height in Feet">
+                                <input type="text" class="form-control" name="height" id="height" placeholder="Height in cms">
                             </div>
                         </div>
                         <div class="row pb-3">
@@ -142,16 +144,23 @@
                         </div>
                         <div class="row pb-5">
                             <div class="col-12 col-sm-3">
-                                <label>Result</label>
+                                <label>BMI</label>
                             </div>
                             <div class="col-12 col-sm-7">
-                                <input type="text"  class="form-control" name="Result" id="Result" readonly>
+                                <!-- <input type="text"  class="form-control" name="Result" id="result" readonly> -->
+                                <div id="result"></div>
+                            </div>
+                            <div class="col-12 col-sm-3 mt-3">
+                                <label>Result</label>
+                            </div>
+                            <div class="col-12 col-sm-7 mt-3">
+                                <div id="update"></div>
                             </div>
                         </div>
                         <div class="row pb-5">
-                            <div class="col-12">
+                            <div class="col-12 ">
                                 <button class="btn btn-primary custom-btn" style="padding: 5px 20px;" onclick="bmi()">
-                                        Submit
+                                        Calculate
                                 </button>
                             </div>
                         </div>
@@ -210,7 +219,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    <script>
+    <!-- <script>
         function bmi() {
             var height = Number(document.getElementById("height").value);
             var weight = Number(document.getElementById("weight").value);
@@ -221,7 +230,7 @@
             var result = weight / (height * height);
             document.getElementById("Result").value = result;
         }
-    </script>
+    </script> -->
 </body>
 
 </html>

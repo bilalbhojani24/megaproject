@@ -37,3 +37,29 @@
 .row .col-12 .custom-btn:hover{
     color: #45a29e;
 }
+
+/*edit for JS*/
+.list_contain{
+    display: flex;
+    padding:10px 0;
+    margin:0;
+    border-bottom:1px solid #dbdcdb
+}
+.list .list_item{
+    width: 70%;
+    color:black;
+    padding:0 0;
+    margin:0;
+}
+.list .list_amt{
+    width:20%;
+    color:black;
+    padding:0 0;
+    margin:0;
+}
+.fa-trash{
+    width:10%;
+    margin-top:5px;
+    color:red;
+    cursor: pointer;
+}
