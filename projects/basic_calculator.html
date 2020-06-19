@@ -13,6 +13,8 @@
     <!--fontawesome link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!--script js-->
+    <script src="../assets/js/calculator.js"></script>
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Piedra&family=Tenali+Ramakrishna&display=swap"
         rel="stylesheet">
@@ -133,58 +135,58 @@
                             <div class="card-body-button mt-3">
                                 <div class="row">
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> CE</button>
+                                        <button class="btn btn-block btn-primary"> CE </button>
                                     </div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> C</button>
+                                        <button class="btn btn-block btn-primary" id="disable1" onclick="empty();disable();"> C</button>
                                     </div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> %</button>
+                                        <button class="btn btn-block btn-primary" onclick="percent()"> %</button>
                                     </div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> /</button>
+                                        <button class="btn btn-block btn-primary" onclick="divide();disable();" id="disable2" > /</button>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> 7</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="number7(); enable()"> 7</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> 8</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="number8(); enable()"> 8</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> 9</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="number9(); enable()"> 9</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> X</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="multiply();disable();" id="disable3" >*</button></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> 4</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="number4(); enable()"> 4</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> 5</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="number5(); enable()"> 5</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> 6</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="number6(); enable()"> 6</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> -</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="minus();disable();" id="disable4" > -</button></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-3">
-                                        <button class="btn  btn-block btn-primary"> 1</button></div>
+                                        <button class="btn  btn-block btn-primary" onclick="number1(); enable()"> 1</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> 2</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="number2(); enable()"> 2</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> 3</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="number3(); enable()"> 3</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> +</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="plus(); disable();" id="disable5" > +</button></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> +/-</button>
+                                        <button class="btn btn-block btn-primary">+/-</button>
                                     </div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> 0</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="number0()"> 0</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> .</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="dot();disable();" id="disable6" > .</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> =</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="calculate();disable();" id="disable7" > =</button></div>
                                 </div>
                             </div>
                         </div>
