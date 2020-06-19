@@ -134,7 +134,8 @@
                                 <label>Number of subject</label>
                             </div>
                             <div class="col-12 col-sm-7">
-                                <input type="text" class="form-control" name="sub_name" id="subnumber" placeholder="Example : 4">
+                                <input type="text" class="form-control" name="sub_num" id="subnumber"
+                                    placeholder="Example : 4">
                             </div>
                         </div>
                         <div class="row pb-3">
@@ -142,7 +143,8 @@
                                 <label>Subject Name</label>
                             </div>
                             <div class="col-12 col-sm-7">
-                                <input type="text" class="form-control" name="sub_name" id="subname" placeholder="Subject Name">
+                                <input type="text" class="form-control" name="sub_name" id="subname"
+                                    placeholder="Subject Name" readonly>
                             </div>
                         </div>
                         <div class="row pb-3">
@@ -150,36 +152,35 @@
                                 <label>Score</label>
                             </div>
                             <div class="col-12 col-sm-7">
-                                <input type="text" class="form-control" name="Score" id="score" placeholder="score out of 100">
+                                <input type="number" class="form-control" name="Score" id="score"
+                                    placeholder="score out of 100" readonly>
                             </div>
                         </div>
                         <div class="row pb-5">
                             <div class="col-12 col-sm-4 my-auto">
-                                <label>Result</label>
-                            </div>
-                            <div class="col-12 col-sm-7">
-                                <input type="text"  class="form-control" name="Result" id="Result" readonly>
-                            </div>
-                        </div>
-                        <div class="row pb-5">
-                            <div class="col-12">
-                                <button class="btn btn-primary custom-btn" style="padding: 5px 20px;" onclick="gradecala()">
-                                        Calculate
+                                <button id="edit_me" class="btn btn-block custom-btn" style="padding: 5px 20px;"
+                                    onclick="its_timeBois()">
+                                    Set
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                    <div class="col-12 col-sm-6 pb-5">
-                        <div id="subject-item" class="mt-4">
-                            <h2 class="jumbotron">GRADES</h2>
-                            <!-- <div class="GradeContainer"><li class="grades">Subject 1</li><h4>A</h4></div>
-                            <div class="GradeContainer"><li class="grades">Subject 2</li><h4>F</h4></div> -->
-                            </div>
+                <div class="col-12 col-sm-6 pb-5">
+                    <div id="subject-grade" class="card mt-4">
+                        <div class="card-header">
+                            <h1>GRADES</h1>
+                        </div>
+                        <div class="card-body">
+                            <ul id="sub_grades">
+                                
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!--Footer section-->
