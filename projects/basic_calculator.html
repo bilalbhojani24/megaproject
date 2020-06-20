@@ -135,7 +135,7 @@
                             <div class="card-body-button mt-3">
                                 <div class="row">
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> CE </button>
+                                        <button class="btn btn-block btn-primary" onclick="del();enable()"> CE </button>
                                     </div>
                                     <div class="col-3">
                                         <button class="btn btn-block btn-primary" id="disable1" onclick="empty();disable();"> C</button>
@@ -179,14 +179,14 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary">+/-</button>
+                                        <button class="btn btn-block btn-primary" onclick="plusminus()">+/-</button>
                                     </div>
                                     <div class="col-3">
                                         <button class="btn btn-block btn-primary" onclick="number0()"> 0</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" onclick="dot();disable();" id="disable6" > .</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="dot();disable();" id="disable6" >.</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" onclick="calculate();disable();" id="disable7" > =</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="calculate();enable();"> =</button></div>
                                 </div>
                             </div>
                         </div>
