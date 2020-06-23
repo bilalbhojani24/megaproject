@@ -50,6 +50,7 @@
  }
  .gradecontainer{
     border-bottom: 1px solid #1f2833;
+    border-top: 1px solid #1f2833;
     font-size: 20px;
     /* margin:5px 20px; */
     display: flex;
@@ -57,14 +58,30 @@
     align-items: center;
  }
  .subject{
+    border-right: 1px solid #1f2833;
+    border-left: 1px solid #1f2833;
      width:60%;
      color: #45a29e;
      text-align: center;
  }
  .grade{
      text-align: center;
-     width: 40%;
+     width: 20%;
+     border-right: 1px solid #1f2833;
+     border-left: 1px solid #1f2833;
  }
+
+#card-h a:before,
+#card-h a .collapsed:before {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right;
+    padding-right: 10px;
+}
+#card-h .collapsed:before {
+    /* symbol for "collapsed" panels */
+    content: "\f067"; 
+}
  
   @media screen and (max-width: 576px) {
      .row .col-12 .row .col-12 .row .custom-input{

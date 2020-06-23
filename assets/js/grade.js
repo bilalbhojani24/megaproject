@@ -3,6 +3,8 @@ window.onload = init;
 function init() {
     // Clear forms here
     document.getElementById("subnumber").value = "";
+    document.getElementById("overall_grade").value = "";
+    document.getElementById("overall_marks").value = "";
 }
 
 var calc = 0;
@@ -24,7 +26,7 @@ function its_timeBois() {
         else if (calc == 1) {
             if (validate(NoOfSub) > 0) {
                 for (let index = 0; index < NoOfSub; index++) {
-                    add_grade(getSubjects(index), calc_grade(getScore(index)));
+                    add_grade(getSubjects(index), calc_grade(getScore(index)), getScore(index));
                 }
                 document.getElementById("form").className = "collapse border-bottom border-right border-left";
                 document.getElementById("resultsbro").scrollIntoView();
@@ -87,15 +89,18 @@ function add_score_input(input_no) {
     score_label.innerHTML = "Subject " + input_no + " score:";
 }
 
-function add_grade(Subject, grade) {
+function add_grade(Subject, grade, marks) {
     const subGrade = document.getElementById("sub_grades");
     var gradecontainer = subGrade.appendChild(document.createElement("div"));
     var card_subject = gradecontainer.appendChild(document.createElement("li"));
+    var card_marks = gradecontainer.appendChild(document.createElement("a"));
     var card_grade = gradecontainer.appendChild(document.createElement("a"));
     gradecontainer.className = "gradecontainer";
     card_subject.className = "subject";
+    card_marks.className = "grade";
     card_grade.className = "grade";
     card_subject.innerHTML = Subject;
+    card_marks.innerHTML = marks;
     card_grade.innerHTML = grade;
     Subject.value = "";
 }
@@ -134,5 +139,6 @@ function overall(NoOfSub) {
     for (let index = 1; index <= parseInt(NoOfSub); index++) {
         score = parseInt(score) + parseInt(document.getElementById("score_sub" + index).value);
     }
-    document.getElementById("overall").value = calc_grade((score / (NoOfSub * 100)) * 100);
+    document.getElementById("overall_grade").value = calc_grade((score / (NoOfSub * 100)) * 100);
+    document.getElementById("overall_marks").value = score;
 }
