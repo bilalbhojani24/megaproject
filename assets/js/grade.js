@@ -5,6 +5,7 @@ function init() {
     document.getElementById("subnumber").value = "";
     document.getElementById("overall_grade").value = "";
     document.getElementById("overall_marks").value = "";
+    document.getElementById("overall_percent").value = "";
 }
 
 var calc = 0;
@@ -142,6 +143,7 @@ function overall(NoOfSub) {
     }
     document.getElementById("overall_grade").value = calc_grade((score / (NoOfSub * 100)) * 100);
     document.getElementById("overall_marks").value = score;
+    document.getElementById("overall_percent").value = ((score / (NoOfSub * 100)) * 100).toFixed(2);
 }
 
 function read_only(NoOfSub) {
