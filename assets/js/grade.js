@@ -31,6 +31,7 @@ function its_timeBois() {
                 document.getElementById("form").className = "collapse border-bottom border-right border-left";
                 document.getElementById("resultsbro").scrollIntoView();
                 overall(NoOfSub);
+                read_only(NoOfSub)
                 calc++;
             }
         }
@@ -60,7 +61,7 @@ function add_sub_input(input_no) {
     var div_parent = inputs.appendChild(document.createElement("div"));
     var div1 = div_parent.appendChild(document.createElement("div"));
     var div2 = div_parent.appendChild(document.createElement("div"));
-    const sub_label = div1.appendChild(document.createElement("label"));
+    var sub_label = div1.appendChild(document.createElement("label"));
     var sub_input = div2.appendChild(document.createElement("input"));
     div_parent.className = "row pb-3";
     div1.className = "col-12 col-sm-4 my-auto";
@@ -141,4 +142,18 @@ function overall(NoOfSub) {
     }
     document.getElementById("overall_grade").value = calc_grade((score / (NoOfSub * 100)) * 100);
     document.getElementById("overall_marks").value = score;
+}
+
+function read_only(NoOfSub) {
+    const inputs = document.getElementById("inputs");
+    var div_parent = inputs.appendChild(document.createElement("div"));
+    var div1 = div_parent.appendChild(document.createElement("div"));
+    var sub_label = div1.appendChild(document.createElement("label"));
+    sub_label.innerHTML = "<i>To Re-enter Values Refresh the Page</i>";
+    div_parent.className = "row pb-3";
+    div1.className = "col-12 col-sm-12 my-auto";
+    for (let index = 1; index <= parseInt(NoOfSub); index++) {
+        document.getElementById("sub_name" + index).setAttribute('readonly', true);
+        document.getElementById("score_sub" + index).setAttribute('readonly', true);
+    }
 }
