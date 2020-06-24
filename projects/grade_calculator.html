@@ -35,7 +35,7 @@
                     <li class="nav-item"><a href="../project.html" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="../team.html" class="nav-link">Team</a></li>
                     <li class="nav-item"><a href="#" class="nav-link ">
-                        <li class="nav-item"><a href="#" class="nav-link " data-toggle="modal" data-target="#signupmodal">
+                    <li class="nav-item"><a href="#" class="nav-link " data-toggle="modal" data-target="#signupmodal">
                             <i class="fa fa-sign-in" style="margin-right: 5px;"></i>Singup</a></li>
                 </ul>
             </div>
@@ -125,61 +125,105 @@
                 </div>
             </div>
             <hr>
-            <div class="row">
-                <div class="col-12 col-sm-6">
-                    <h2 style="padding-bottom: 45px;">grade calculator</h2>
-                    <div class="form">
-                        <div class="row pb-3">
-                            <div class="col-12 col-sm-4 my-auto">
-                                <label>Number of subject</label>
+            <div id="accordion">
+                <div class="row">
+                    <div class="col-12 offset-sm-3 col-sm-6">
+                        <div class="card">
+                            <div id="card-h" class="card-header collapsed" style="cursor:pointer; padding: 0;">
+                                <h2 style="text-align: left; padding-top: 10px; padding-left: 10px;"><a
+                                        data-toggle="collapse" data-target="#form">grade
+                                        calculator</a></h2>
                             </div>
-                            <div class="col-12 col-sm-7">
-                                <input type="text" class="form-control" name="sub_num" id="subnumber"
-                                    placeholder="Example : 4">
+                            <div class="collapse show border-bottom border-right border-left" id="form"
+                                data-parent="#accordion">
+                                <div class="form card-body">
+                                    <div class="row pb-3">
+                                        <div class="col-12 col-sm-4 my-auto">
+                                            <label>Number of subject</label>
+                                        </div>
+                                        <div class="col-12 col-sm-7">
+                                            <input type="text" class="form-control" name="sub_num" id="subnumber"
+                                                placeholder="Example : 4">
+                                        </div>
+                                    </div>
+                                    <div id="inputs">
+                                        <!-- <div class="row pb-3">
+                                <div class="col-12 col-sm-4 my-auto">
+                                    <label>Subject Name</label>
+                                </div>
+                                <div class="col-12 col-sm-7">
+                                    <input type="text" class="form-control" name="sub_name" id="subname"
+                                        placeholder="Subject Name" readonly>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row pb-3">
-                            <div class="col-12 col-sm-4 my-auto">
-                                <label>Subject Name</label>
-                            </div>
-                            <div class="col-12 col-sm-7">
-                                <input type="text" class="form-control" name="sub_name" id="subname"
-                                    placeholder="Subject Name" readonly>
-                            </div>
-                        </div>
-                        <div class="row pb-3">
-                            <div class="col-12 col-sm-4 my-auto">
-                                <label>Score</label>
-                            </div>
-                            <div class="col-12 col-sm-7">
-                                <input type="number" class="form-control" name="Score" id="score"
-                                    placeholder="score out of 100" readonly>
-                            </div>
-                        </div>
-                        <div class="row pb-5">
-                            <div class="col-12 col-sm-4 my-auto">
-                                <button id="edit_me" class="btn btn-block custom-btn" style="padding: 5px 20px;"
-                                    onclick="its_timeBois()">
-                                    Set
-                                </button>
+                            <div class="row pb-3">
+                                <div class="col-12 col-sm-4 my-auto">
+                                    <label>Score</label>
+                                </div>
+                                <div class="col-12 col-sm-7">
+                                    <input type="number" class="form-control" name="Score" id="score"
+                                        placeholder="score out of 100" readonly>
+                                </div>
+                            </div> -->
+                                    </div>
+                                    <div class="row pb-5">
+                                        <div class="col-12 col-sm-4 my-auto">
+                                            <button id="edit_me" class="btn btn-block custom-btn"
+                                                style="padding: 5px 20px;" onclick="its_timeBois()">
+                                                Set
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 pb-5">
-                    <div id="subject-grade" class="card mt-4">
+            </div>
+            <hr>
+            <div class="row" id="resultsbro">
+                <div class="col-12 offset-sm-3 col-sm-6 pb-5">
+                    <div id="subject-grade" class="card mt-4 pb-5">
                         <div class="card-header">
                             <h1>GRADES</h1>
                         </div>
                         <div class="card-body">
                             <ul id="sub_grades">
-                                
+                                <div class="gradecontainer">
+                                    <li class="subject text-secondary">
+                                        SUBJECT
+                                    </li>
+                                    <a class="grade text-secondary">Marks</a>
+                                    <a class="grade text-secondary">Grade</a>
+                                </div>
                             </ul>
+                            <div class="pt-4">
+                                <div class="row">
+                                    <label for="overall" class="col-form-label col-12 col-sm-4"> Overall
+                                        Marks:</label>
+                                    <input type="text" class="form-control col-12 col-sm-3" name="overall"
+                                        id="overall_marks" placeholder="Overall result" readonly>
+                                </div>
+                                <div class="row">
+                                <label for="overall" class="col-form-label col-12 col-sm-4"> Overall
+                                    Grade:</label>
+                                <input type="text" class="form-control col-12 col-sm-3" name="overall"
+                                    id="overall_grade" placeholder="Overall result" readonly>
+                            </div>
+                            <div class="row">
+                            <label for="overall" class="col-form-label col-12 col-sm-4 my-auto"> Overall
+                                Percent:</label>
+                            <input type="text" class="form-control col-12 col-sm-3" name="overall" id="overall_percent"
+                                placeholder="Overall result" readonly>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
     </div>
 

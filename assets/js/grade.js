@@ -3,61 +3,106 @@ window.onload = init;
 function init() {
     // Clear forms here
     document.getElementById("subnumber").value = "";
-    document.getElementById("subname").value = "";
-    document.getElementById("score").value = "";
+    document.getElementById("overall_grade").value = "";
+    document.getElementById("overall_marks").value = "";
+    document.getElementById("overall_percent").value = "";
 }
 
-var loop = 0;
+var calc = 0;
 
 
 function its_timeBois() {
-    if (loop > 0) {
-        if (loop == 1) {
-            alert("Reached Max Subjects Refresh Page To start Over")
-        } else {
-            loop_me();
-            loop -= 1;
-        }
-    }
-    else {
-        var NoOfSub = document.getElementById("subnumber").value;
-        if (NoOfSub.length === 0) {
-            alert("Enter No. of Subjects");
-        } else {
-            NoOfSub = parseInt(NoOfSub);
-            loop = NoOfSub + 1; //adding one for the logic in loop > 0 to work
+    var NoOfSub = document.getElementById("subnumber").value;
+    if (NoOfSub.length === 0) {
+        alert("Enter No. of Subjects");
+    } else {
+        NoOfSub = parseInt(NoOfSub);
+        if (calc == 0) {
             document.getElementById("subnumber").setAttribute('readonly', true);
             var button = document.getElementById("edit_me");
             button.innerHTML = "Calculate";
-            document.getElementById("subname").readOnly = false;
-            document.getElementById("score").readOnly = false;
+            looper(NoOfSub);
+            calc++;
+        }
+        else if (calc == 1) {
+            if (validate(NoOfSub) > 0) {
+                for (let index = 0; index < NoOfSub; index++) {
+                    add_grade(getSubjects(index), calc_grade(getScore(index)), getScore(index));
+                }
+                document.getElementById("form").className = "collapse border-bottom border-right border-left";
+                document.getElementById("resultsbro").scrollIntoView();
+                overall(NoOfSub);
+                read_only(NoOfSub)
+                calc++;
+            }
+        }
+        else {
+            alert("data already calculated refresh page to reset");
         }
     }
 }
 
-function loop_me() {
-    var Subject = document.getElementById("subname").value;
-    var grade = document.getElementById("score").value;
-    if (Subject.length === 0 && grade.length === 0) {
-        alert("input missing");
+function looper(NoOfSub) {
+    for (let index = 0; index < NoOfSub; index++) {
+        add_sub_input(index + 1);
+        add_score_input(index + 1);
     }
-    else {
-        grade = parseFloat(grade);
-        var result = calc_grade(grade);
-        add_grade(Subject, result);
-    }
-
 }
 
-function add_grade(Subject, grade) {
+function getSubjects(index) {
+    return document.getElementById("sub_name" + (parseInt(index) + 1)).value;
+}
+
+function getScore(index) {
+    return document.getElementById("score_sub" + (parseInt(index) + 1)).value;
+}
+
+function add_sub_input(input_no) {
+    const inputs = document.getElementById("inputs");
+    var div_parent = inputs.appendChild(document.createElement("div"));
+    var div1 = div_parent.appendChild(document.createElement("div"));
+    var div2 = div_parent.appendChild(document.createElement("div"));
+    var sub_label = div1.appendChild(document.createElement("label"));
+    var sub_input = div2.appendChild(document.createElement("input"));
+    div_parent.className = "row pb-3";
+    div1.className = "col-12 col-sm-4 my-auto";
+    div2.className = "col-12 col-sm-7";
+    sub_input.className = "form-control";
+    sub_input.id = "sub_name" + input_no;
+    sub_input.placeholder = "Subject Name";
+    sub_input.type = "text";
+    sub_label.innerHTML = "Subject " + input_no + " Name:";
+}
+
+function add_score_input(input_no) {
+    const inputs = document.getElementById("inputs");
+    var div_parent = inputs.appendChild(document.createElement("div"));
+    var div1 = div_parent.appendChild(document.createElement("div"));
+    var div2 = div_parent.appendChild(document.createElement("div"));
+    const score_label = div1.appendChild(document.createElement("label"));
+    var score_input = div2.appendChild(document.createElement("input"));
+    div_parent.className = "row pb-3";
+    div1.className = "col-12 col-sm-4 my-auto";
+    div2.className = "col-12 col-sm-7";
+    score_input.className = "form-control";
+    score_input.id = "score_sub" + input_no;
+    score_input.placeholder = "Score out of 100";
+    score_input.type = "number";
+    score_label.innerHTML = "Subject " + input_no + " score:";
+}
+
+function add_grade(Subject, grade, marks) {
     const subGrade = document.getElementById("sub_grades");
     var gradecontainer = subGrade.appendChild(document.createElement("div"));
     var card_subject = gradecontainer.appendChild(document.createElement("li"));
+    var card_marks = gradecontainer.appendChild(document.createElement("a"));
     var card_grade = gradecontainer.appendChild(document.createElement("a"));
     gradecontainer.className = "gradecontainer";
     card_subject.className = "subject";
-    card_grade.className = "grade"
+    card_marks.className = "grade";
+    card_grade.className = "grade";
     card_subject.innerHTML = Subject;
+    card_marks.innerHTML = marks;
     card_grade.innerHTML = grade;
     Subject.value = "";
 }
@@ -74,7 +119,43 @@ function calc_grade(grade) {
         return "C";
     } else if (grade > 30) {
         return "D";
-    } else if (grade > 0) {
+    } else if (grade >= 0) {
         return "F";
+    }
+}
+
+function validate(NoOfSub) {
+    for (let index = 1; index <= parseInt(NoOfSub); index++) {
+        if (
+            (document.getElementById("sub_name" + index).value).length === 0 ||
+            (document.getElementById("score_sub" + index).value).length === 0
+        ) {
+            alert("enter data for Subject " + index);
+            return 0;
+        }
+    }
+    return 1;
+}
+function overall(NoOfSub) {
+    var score = 0;
+    for (let index = 1; index <= parseInt(NoOfSub); index++) {
+        score = parseInt(score) + parseInt(document.getElementById("score_sub" + index).value);
+    }
+    document.getElementById("overall_grade").value = calc_grade((score / (NoOfSub * 100)) * 100);
+    document.getElementById("overall_marks").value = score;
+    document.getElementById("overall_percent").value = ((score / (NoOfSub * 100)) * 100).toFixed(2);
+}
+
+function read_only(NoOfSub) {
+    const inputs = document.getElementById("inputs");
+    var div_parent = inputs.appendChild(document.createElement("div"));
+    var div1 = div_parent.appendChild(document.createElement("div"));
+    var sub_label = div1.appendChild(document.createElement("label"));
+    sub_label.innerHTML = "<i>To Re-enter Values Refresh the Page</i>";
+    div_parent.className = "row pb-3";
+    div1.className = "col-12 col-sm-12 my-auto";
+    for (let index = 1; index <= parseInt(NoOfSub); index++) {
+        document.getElementById("sub_name" + index).setAttribute('readonly', true);
+        document.getElementById("score_sub" + index).setAttribute('readonly', true);
     }
 }
