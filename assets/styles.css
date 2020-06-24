@@ -48,6 +48,7 @@ body{
 
 /*footer*/
 footer{
+    position: relative;
     background-color: rgba(0, 0, 0,0.8);
     color: #45a29e;;
 }
@@ -176,5 +177,40 @@ footer .footer-right form button{
     color:#66FCF1
 }
 
+#Video{
 
+        position: relative;
+        background-color: black;
+        height: 75vh;
+        min-height: 25rem;
+        width: 100%;
+        overflow: hidden;
+}
 
+#Video .container {
+    position: relative;
+    z-index: 2;
+  }
+
+#Video video{
+position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.overlay{
+position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
