@@ -23,41 +23,75 @@
     color: #45a29e;
 }
 
-.col-12 .mt-4 .jumbotron{
-    background-color: #1f2833;
-    color: #66fcf1;
-    padding-bottom: 10px;
-}
-
-.GradeContainer{
-    border: 1px solid #1f2833;
-    font-size: 20px;
-    margin:5px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.grades{
-    padding: 5px;
-    width:80%;
-    color: #45a29e;
-    list-style: none;
-    text-transform: uppercase;
-}
-#list_item{ 
+#sub_grades{ 
     text-align: left;
     font-size: 2rem; 
     list-style: none;
     padding: 0;
     padding-bottom: 5px;
-    background-color: #f0f5f5;
     border-radius: 5px;
+  } 
+  .row .col-12 .row .col-12 .row .custom-input{
+      padding-right: 0px;
   }
  
-.mt-4 .GradeContainer h4{
-    padding-left: 10px;
-    padding-right: 20px;
-    margin-top: 5px;
-    color: #45a29e;
+  .row .col-12 .row .col-12 .row .custom-btn{
+     padding-left: 0px;
+  }
+ 
+  .row .col-12 .row .col-12 .row .custom-btn .btn-primary{
+     color: #66fcf1;
+     background-color: #1f2833;
+     border-color: #66fcf1;
+     box-shadow: 2px 2px;
+  }
+  .row .col-12 .row .col-12 .row .custom-btn .btn-primary:hover{
+     color: #45a29e;
+ }
+ .gradecontainer{
+    border-bottom: 1px solid #1f2833;
+    border-top: 1px solid #1f2833;
+    font-size: 20px;
+    /* margin:5px 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .subject{
+    border-right: 1px solid #1f2833;
+    border-left: 1px solid #1f2833;
+     width:60%;
+     color: #45a29e;
+     text-align: center;
+ }
+ .grade{
+     text-align: center;
+     width: 20%;
+     border-right: 1px solid #1f2833;
+     border-left: 1px solid #1f2833;
+ }
+
+#card-h a:before,
+#card-h a .collapsed:before {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right;
+    padding-right: 10px;
 }
+#card-h .collapsed:before {
+    /* symbol for "collapsed" panels */
+    content: "\f067"; 
+}
+ 
+  @media screen and (max-width: 576px) {
+     .row .col-12 .row .col-12 .row .custom-input{
+         padding-right: 15px;
+     }
+    
+     .row .col-12 .row .col-12 .row .custom-btn{
+        padding-left: 15px;
+        margin-top: 10px;
+     }
+
+   }
+ 

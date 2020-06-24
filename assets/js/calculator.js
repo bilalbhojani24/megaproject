@@ -1,6 +1,5 @@
-// const output = document.getElementById("output");
-// let button = document.querySelector("button");
-// disable();
+
+// disable();   
 function number1(){ 
     const output = document.getElementById("output");output.value+="1";}
 function number2(){ 
@@ -43,15 +42,22 @@ function empty(){
      disable();
     }
 function enable(){
-    for(var i=1; i<=7;i++);
-    {
-        document.getElementById(`disable${i}`).disabled = false;
-    }
+    document.getElementById("disable1").disabled = false;
+    document.getElementById("disable2").disabled = false;
+    document.getElementById("disable3").disabled = false;
+    document.getElementById("disable4").disabled = false;
+    document.getElementById("disable5").disabled = false;
+    document.getElementById("disable6").disabled = false;
 }
 function disable(){
-    for(var i=1; i<=7;i++);
-    {
-        document.getElementById(`disable${i}`).disabled = true;
-    }
+    document.getElementById("disable1").disabled = true;
+    document.getElementById("disable2").disabled = true;
+    document.getElementById("disable3").disabled = true;
+    document.getElementById("disable4").disabled = true;
+    document.getElementById("disable5").disabled = true;
+    document.getElementById("disable6").disabled = true;
 }
-    
+function del() {
+    var strng=document.getElementById("output").value;
+    document.getElementById("output").value=strng.substring(0,strng.length-1);
+}

@@ -24,16 +24,16 @@
 <body>
     <nav class="navbar navbar-header navbar-expand-md">
         <div class="container">
-            <a href="#" class="navbar-brand">Megaproject</a>
+            <a href="../index.html" class="navbar-brand">Megaproject</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"
                 class="float-right">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="Navbar" class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="../project.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="../team.html" class="nav-link">Team</a></li>
                     <li class="nav-item"><a href="#" class="nav-link ">
                         <li class="nav-item"><a href="#" class="nav-link " data-toggle="modal" data-target="#signupmodal">
                             <i class="fa fa-sign-in" style="margin-right: 5px;"></i>Singup</a></li>
@@ -135,7 +135,7 @@
                             <div class="card-body-button mt-3">
                                 <div class="row">
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary"> CE </button>
+                                        <button class="btn btn-block btn-primary" onclick="del();enable()"> CE </button>
                                     </div>
                                     <div class="col-3">
                                         <button class="btn btn-block btn-primary" id="disable1" onclick="empty();disable();"> C</button>
@@ -179,14 +179,14 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary">+/-</button>
+                                        <button class="btn btn-block btn-primary" onclick="plusminus()">+/-</button>
                                     </div>
                                     <div class="col-3">
                                         <button class="btn btn-block btn-primary" onclick="number0()"> 0</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" onclick="dot();disable();" id="disable6" > .</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="dot();disable();" id="disable6" >.</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" onclick="calculate();disable();" id="disable7" > =</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="calculate();enable();"> =</button></div>
                                 </div>
                             </div>
                         </div>
