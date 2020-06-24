@@ -129,8 +129,9 @@
                 <div class="row">
                     <div class="col-12 offset-sm-3 col-sm-6">
                         <div class="card">
-                            <div class="card-header" style="cursor:pointer;">
-                                <h2 style="text-align: left;"><a data-toggle="collapse" data-target="#form">grade
+                            <div id="card-h" class="card-header collapsed" style="cursor:pointer; padding: 0;">
+                                <h2 style="text-align: left; padding-top: 10px; padding-left: 10px;"><a
+                                        data-toggle="collapse" data-target="#form">grade
                                         calculator</a></h2>
                             </div>
                             <div class="collapse show border-bottom border-right border-left" id="form"
@@ -188,18 +189,41 @@
                         </div>
                         <div class="card-body">
                             <ul id="sub_grades">
-
+                                <div class="gradecontainer">
+                                    <li class="subject text-secondary">
+                                        SUBJECT
+                                    </li>
+                                    <a class="grade text-secondary">Marks</a>
+                                    <a class="grade text-secondary">Grade</a>
+                                </div>
                             </ul>
+                            <div class="pt-4">
+                                <div class="row">
+                                    <label for="overall" class="col-form-label col-12 col-sm-4"> Overall
+                                        Marks:</label>
+                                    <input type="text" class="form-control col-12 col-sm-3" name="overall"
+                                        id="overall_marks" placeholder="Overall result" readonly>
+                                </div>
+                                <div class="row">
+                                <label for="overall" class="col-form-label col-12 col-sm-4"> Overall
+                                    Grade:</label>
+                                <input type="text" class="form-control col-12 col-sm-3" name="overall"
+                                    id="overall_grade" placeholder="Overall result" readonly>
+                            </div>
+                            <div class="row">
+                            <label for="overall" class="col-form-label col-12 col-sm-4 my-auto"> Overall
+                                Percent:</label>
+                            <input type="text" class="form-control col-12 col-sm-3" name="overall" id="overall_percent"
+                                placeholder="Overall result" readonly>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="overall" class="col-form-label"> Overall Result is:</label>
-                        <input type="text" class="form-control" name="overall" id="overall" placeholder="Overall result"
-                            readonly>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
     </div>
 
