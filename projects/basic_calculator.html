@@ -35,14 +35,14 @@
                     <li class="nav-item"><a href="../project.html" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="../team.html" class="nav-link">Team</a></li>
                     <li class="nav-item"><a href="#" class="nav-link ">
-                        <li class="nav-item"><a href="#" class="nav-link " data-toggle="modal" data-target="#signupmodal">
+                    <li class="nav-item"><a href="#" class="nav-link " data-toggle="modal" data-target="#signupmodal">
                             <i class="fa fa-sign-in" style="margin-right: 5px;"></i>Singup</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-     <!--Modal for signup-->
-     <div class="modal" role="dialog" id="signupmodal">
+    <!--Modal for signup-->
+    <div class="modal" role="dialog" id="signupmodal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -96,7 +96,7 @@
                 <div class="modal-footer">
                     <div class="row justify-content-center">
                         <div class="col-6 col-sm-6 col-lg-6">
-                            <button class="btn" >SignUp</button>
+                            <button class="btn">SignUp</button>
                         </div>
                         <div class="col-6 col-sm-6 col-lg-6">
                             <button class="btn " data-dismiss="modal">Cancel</button>
@@ -109,21 +109,29 @@
     <div class="calculator-main">
         <div class="container ">
             <div class="row">
-                <div class="col-12 col-sm-5">
+                <div class="col-12">
                     <h2>Basic calculator</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ullam nesciunt quos quia ab quae
-                        corporis distinctio eveniet possimus quibusdam repudiandae maxime ipsam illo odio laudantium,
-                        saepe
-                        culpa, eos necessitatibus? Soluta incidunt ad minus tenetur, inventore, ab rem, dolorem ratione
-                        obcaecati maiores ipsa porro esse? Amet commodi id similique illum quo. Esse quae eligendi, ut
-                        doloribus sapiente deserunt accusamus tempora maxime pariatur consequatur dolorum tempore
-                        officia
-                        laboriosam repellendus asperiores dicta dignissimos enim voluptatibus corrupti. Nisi repudiandae
-                        eaque voluptatum provident excepturi nesciunt. Autem accusantium beatae, error itaque atque
-                        eveniet
-                        quibusdam vitae, perferendis veritatis et ut culpa nihil perspiciatis, aliquid eum ea.</p>
+                    <p>The most simple mathematical operations: addition, subtraction, multiplication, division. This is
+                        a simplified version of the online calculator.
+                        For the work of the simple calculator You can use both ordinary numeric buttons above the
+                        keyboard and separate numeric buttons on the right.
+                    <ul>
+                        <li>To delete the last character, press the [Backspace on keyboard] or [CE] key.</li>
+                        <li>To enter a plus sign, use the [ + or on keyboard ] key at the top or on the side numeric
+                            keypad.</li>
+                        <li>To enter a minus sign, use the [ - or on keyboard ] key at the top or on the side numeric
+                            keypad.</li>
+                        <li>Use the [ * or on keyboard ] key on the side numeric keypad to enter the multiplication
+                            sign.</li>
+                        <li>Use the [ / or on keyboard ] key on the side numeric keypad to enter the division sign.</li>
+                        <li>You can use the [ C ] key to reset the calculator.</li>
+                    </ul>
+                    </p>
                 </div>
-                <div class="col-12 col-sm-6 offset-sm-1 mt-5">
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 col-sm-6 offset-sm-3 mt-5">
                     <div class="card mb-5">
                         <div class="card-header">
                             CALCULATOR
@@ -138,44 +146,58 @@
                                         <button class="btn btn-block btn-primary" onclick="del();enable()"> CE </button>
                                     </div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" id="disable1" onclick="empty();disable();"> C</button>
+                                        <button class="btn btn-block btn-primary" id="disable1"
+                                            onclick="empty();disable();"> C</button>
                                     </div>
                                     <div class="col-3">
                                         <button class="btn btn-block btn-primary" onclick="percent()"> %</button>
                                     </div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" onclick="divide();disable();" id="disable2" > /</button>
+                                        <button class="btn btn-block btn-primary" onclick="divide();disable();"
+                                            id="disable2"> /</button>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" onclick="number7(); enable()"> 7</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="number7(); enable()">
+                                            7</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" onclick="number8(); enable()"> 8</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="number8(); enable()">
+                                            8</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" onclick="number9(); enable()"> 9</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="number9(); enable()">
+                                            9</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" onclick="multiply();disable();" id="disable3" >*</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="multiply();disable();"
+                                            id="disable3">*</button></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" onclick="number4(); enable()"> 4</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="number4(); enable()">
+                                            4</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" onclick="number5(); enable()"> 5</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="number5(); enable()">
+                                            5</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" onclick="number6(); enable()"> 6</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="number6(); enable()">
+                                            6</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" onclick="minus();disable();" id="disable4" > -</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="minus();disable();"
+                                            id="disable4"> -</button></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-3">
-                                        <button class="btn  btn-block btn-primary" onclick="number1(); enable()"> 1</button></div>
+                                        <button class="btn  btn-block btn-primary" onclick="number1(); enable()">
+                                            1</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" onclick="number2(); enable()"> 2</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="number2(); enable()">
+                                            2</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" onclick="number3(); enable()"> 3</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="number3(); enable()">
+                                            3</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" onclick="plus(); disable();" id="disable5" > +</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="plus(); disable();"
+                                            id="disable5"> +</button></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-3">
@@ -184,9 +206,11 @@
                                     <div class="col-3">
                                         <button class="btn btn-block btn-primary" onclick="number0()"> 0</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" onclick="dot();disable();" id="disable6" >.</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="dot();disable();"
+                                            id="disable6">.</button></div>
                                     <div class="col-3">
-                                        <button class="btn btn-block btn-primary" onclick="calculate();enable();"> =</button></div>
+                                        <button class="btn btn-block btn-primary" onclick="calculate();enable();">
+                                            =</button></div>
                                 </div>
                             </div>
                         </div>
