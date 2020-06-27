@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page</title>
@@ -8,368 +9,279 @@
     <link rel="stylesheet" href="assets/css/project.css">
     <link rel="stylesheet" href="assets/css/team.css">
     <!-- Latest compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
 
     <!--fontawesome link-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <!--google fonts-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Piedra&family=Tenali+Ramakrishna&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&family=Tenali+Ramakrishna&display=swap"
+        rel="stylesheet" />
     <!--AOS link-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
+</head>
 
-  <body>
-    <nav class="navbar navbar-header navbar-expand-md ">
-      <div class="container">
-        <a href="index.html" class="navbar-brand">Megaproject</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#Navbar"
-          class="float-right"
-        >
-          <!-- <span class="navbar-toggler-icon"></span> -->
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </button>
-        <div id="Navbar" class="collapse navbar-collapse justify-content-end">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item">
-              <a href="#project" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#team" class="nav-link">Team</a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="#"
-                class="nav-link"
-                data-toggle="modal"
-                data-target="#signupmodal"
-              >
-                <i class="fa fa-sign-in" style="margin-right: 5px;"></i
-                >Singup</a
-              >
-            </li>
-          </ul>
+<body>
+    <nav class="navbar navbar-header navbar-expand-md">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Megaproject</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"
+                class="float-right">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="Navbar" class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#team" class="nav-link">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-toggle="modal" data-target="#signupmodal">
+                            <i class="fa fa-sign-in" style="margin-right: 5px;"></i>Singup</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 
     <!--Modal for signup-->
     <div class="modal" role="dialog" id="signupmodal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">SIGN UP</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="row mb-3">
-              <div class="col-12 col-sm-4">
-                <label for="name">Name</label>
-              </div>
-              <div class="col-12 col-sm-8">
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Full Name"
-                />
-              </div>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">SIGN UP</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <div class="col-12 col-sm-4">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <input type="text" name="name" id="name" placeholder="Full Name" />
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12 col-sm-4">
+                            <label for="name">Mobile</label>
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <input type="tel" name="mobile" id="mobile" placeholder="Mobile Number" />
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12 col-sm-4">
+                            <label for="name">username</label>
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <input type="email" name="uname" id="uname" placeholder="Username" />
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12 col-sm-4">
+                            <label for="password">password</label>
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <input type="text" name="password" id="password" placeholder="Password" />
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12 col-sm-4">
+                            <label for="vpassword">Verify password</label>
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <input type="text" name="vpassword" id="vpassword" placeholder="Verify password" />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-sm-6 col-lg-6">
+                            <button class="btn">SignUp</button>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-6">
+                            <button class="btn" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row mb-3">
-              <div class="col-12 col-sm-4">
-                <label for="name">Mobile</label>
-              </div>
-              <div class="col-12 col-sm-8">
-                <input
-                  type="tel"
-                  name="mobile"
-                  id="mobile"
-                  placeholder="Mobile Number"
-                />
-              </div>
-            </div>
-            <div class="row mb-3">
-              <div class="col-12 col-sm-4">
-                <label for="name">username</label>
-              </div>
-              <div class="col-12 col-sm-8">
-                <input
-                  type="email"
-                  name="uname"
-                  id="uname"
-                  placeholder="Username"
-                />
-              </div>
-            </div>
-            <div class="row mb-3">
-              <div class="col-12 col-sm-4">
-                <label for="password">password</label>
-              </div>
-              <div class="col-12 col-sm-8">
-                <input
-                  type="text"
-                  name="password"
-                  id="password"
-                  placeholder="Password"
-                />
-              </div>
-            </div>
-            <div class="row mb-3">
-              <div class="col-12 col-sm-4">
-                <label for="vpassword">Verify password</label>
-              </div>
-              <div class="col-12 col-sm-8">
-                <input
-                  type="text"
-                  name="vpassword"
-                  id="vpassword"
-                  placeholder="Verify password"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <div class="row justify-content-center">
-              <div class="col-6 col-sm-6 col-lg-6">
-                <button class="btn">SignUp</button>
-              </div>
-              <div class="col-6 col-sm-6 col-lg-6">
-                <button class="btn" data-dismiss="modal">Cancel</button>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
     <!-- Banner video -->
     <section id="Video">
-      <div class="overlay"></div>
-      <video
-        playsinline="playsinline"
-        autoplay="autoplay"
-        muted="muted"
-        loop="loop"
-      >
-        <source src="assets/images/Electronics - 2314.mp4" type="video/mp4" />
-      </video>
-      <div class="container h-100">
-        <div class="d-flex h-100 text-center align-items-center">
-          <div class="w-100 text-white">
-            <h1 class="display-3">Welcome</h1>
-            <p class="lead mb-0">
-              this a combined project showcasing the work of the developers. put
-              together as a beginner project
-            </p>
-          </div>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="assets/images/Electronics - 2314.mp4" type="video/mp4" />
+        </video>
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1 class="display-3">Welcome</h1>
+                    <p class="lead mb-0">
+                        this a combined project showcasing the work of the developers. put
+                        together as a beginner project
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
     <!--card-->
-    <div class="main" id="project" class="project">
-      <div class="container pt-5 pb-5">
-        <h2 style="text-align: center;" class="heading mb-4">OUR PROJECT</h2>
-        <div class="card-deck">
-          <div
-            class="card"
-           
-            data-aos="fade-up"
-            data-aos-duration="500"
-          >
-            <video class="img-fluid" id="videoplay1" autoplay muted>
-              <source src="assets/images/Calculator.mp4" type="video/mp4" />
-            </video>
-            <div class="card-body">
-              <h3 class="card-title">Basic Calculator</h3>
-              <a href="projects/basic_calculator.html" class="btn btn-primary"
-                >Explore</a
-              >
+    <div class="main" id="project">
+        <div class="container pt-5 pb-5">
+            <h2 style="text-align: center;" class="heading mb-4">OUR PROJECT</h2>
+            <div class="card-deck">
+                <div class="card" data-aos="fade-up" data-aos-duration="500">
+                    <video class="img-fluid" id="videoplay1" autoplay muted>
+                        <source src="assets/images/Calculator.mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-body">
+                        <h3 class="card-title">Basic Calculator</h3>
+                        <a href="projects/basic_calculator.html" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="500">
+                    <video class="img-fluid" playsinline autoplay muted id="videoplay3">
+                        <source src="assets/images/Take Away.mp4" type="video/mp4" id="videoplay3" />
+                    </video>
+                    <div class="card-body">
+                        <h3 class="card-title">Tip Calculator</h3>
+                        <a href="projects/tip_calculator.html" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="500">
+                    <video class="img-fluid" playsinline autoplay muted id="videoplay2">
+                        <source src="assets/images/Online Personal Trainer.mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-body">
+                        <h3 class="card-title">BMI Calculator</h3>
+                        <a href="projects/bmi_calculator.html" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="card" data-aos="fade-up" data-aos-duration="500">
-            <video class="img-fluid" playsinline autoplay muted id="videoplay3">
-              <source
-                src="assets/images/Take Away.mp4"
-                type="video/mp4"
-                id="videoplay3"
-              />
-            </video>
-            <div class="card-body">
-              <h3 class="card-title">Tip Calculator</h3>
-              <a href="projects/tip_calculator.html" class="btn btn-primary"
-                >Explore</a
-              >
+            <div class="card-deck mt-5">
+                <div class="card" data-aos="fade-up" data-aos-duration="500">
+                    <video class="img-fluid" playsinline autoplay muted id="videoplay2">
+                        <source src="assets/images/Spreadsheets.mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-body">
+                        <h3 class="card-title">Budget Calculator</h3>
+                        <a href="projects/budget_application.html" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="500">
+                    <video class="img-fluid" playsinline autoplay muted id="videoplay3">
+                        <source src="assets/images/Checklist.mp4" type="video/mp4" id="videoplay3" />
+                    </video>
+                    <div class="card-body">
+                        <h3 class="card-title">TODO APP</h3>
+                        <a href="projects/todo.html" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="500">
+                    <video class="img-fluid" playsinline autoplay muted id="videoplay3">
+                        <source src="assets/images/Grades.mp4" type="video/mp4" id="videoplay3" />
+                    </video>
+                    <div class="card-body">
+                        <h3 class="card-title">Grade Calculator</h3>
+                        <a href="projects/grade_calculator.html" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="card" data-aos="fade-up" data-aos-duration="500">
-            <video class="img-fluid" playsinline autoplay muted id="videoplay2">
-              <source
-                src="assets/images/Online Personal Trainer.mp4"
-                type="video/mp4"
-              />
-            </video>
-            <div class="card-body">
-              <h3 class="card-title">BMI Calculator</h3>
-              <a href="projects/bmi_calculator.html" class="btn btn-primary"
-                >Explore</a
-              >
-            </div>
-          </div>
         </div>
-        <div class="card-deck mt-5">
-          <div class="card" data-aos="fade-up" data-aos-duration="500">
-            <video class="img-fluid" playsinline autoplay muted id="videoplay2">
-              <source src="assets/images/Spreadsheets.mp4" type="video/mp4" />
-            </video>
-            <div class="card-body">
-              <h3 class="card-title">Budget Calculator</h3>
-              <a href="projects/budget_application.html" class="btn btn-primary"
-                >Explore</a
-              >
-            </div>
-          </div>
-          <div class="card" data-aos="fade-up" data-aos-duration="500">
-            <video class="img-fluid" playsinline autoplay muted id="videoplay3">
-              <source
-                src="assets/images/Checklist.mp4"
-                type="video/mp4"
-                id="videoplay3"
-              />
-            </video>
-            <div class="card-body">
-              <h3 class="card-title">TODO APP</h3>
-              <a href="projects/todo.html" class="btn btn-primary">Explore</a>
-            </div>
-          </div>
-          <div class="card" data-aos="fade-up" data-aos-duration="500">
-            <video class="img-fluid" playsinline autoplay muted id="videoplay3">
-              <source
-                src="assets/images/Grades.mp4"
-                type="video/mp4"
-                id="videoplay3"
-              />
-            </video>
-            <div class="card-body">
-              <h3 class="card-title">Grade Calculator</h3>
-              <a href="projects/grade_calculator.html" class="btn btn-primary"
-                >Explore</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <!--Team section-->
-     <div class="teamsection" id="team"> 
-    <div class="container pb-5">
-        <h2 style="text-align: center;" class="heading pb-5 pt-5">TEAM</h2>
-        <div class="row" data-aos="fade-up" data-aos-duration="1000">
-          <div class="col-12 col-sm-12 col-md-4">
-            <img class="align-self-start mr-3" src="https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593358_1280.jpg"  alt="Generic placeholder image" style="width:90%">
-          </div>
-          <div class="col-12 col-sm-12 col-md-8">
-            <h3 class="mt-0">Bilal Bhojani</h3>
-            <p>Front-end Developer</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repellat qui porro eius velit? Voluptas consectetur excepturi magni blanditiis dignissimos!</p>
-            <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-          </div>
+    <div class="teamsection" id="team">
+        <div class="container pb-5">
+            <h2 style="text-align: center;" class="heading">TEAM</h2>
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-12 col-sm-5">
+                    <div class="card" id="teams">
+                        <div class="card-img-top">
+                            <img class="img-fluid rounded"
+                                src="https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593358_1280.jpg"
+                                alt="Generic placeholder image">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="mt-0">Bilal Bhojani</h3>
+                            <p>Front-end Developer</p>
+                            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repellat qui porro eius
+                                velit?
+                                Voluptas consectetur excepturi magni blanditiis dignissimos!</p>
+                            <article class="text-center pt-3">
+                                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-5 offset-sm-1 mt-4 mt-md-0">
+                    <div class="card" id="teams">
+                        <div class="card-img-top">
+                            <img class="img-fluid rounded"
+                                src="https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593358_1280.jpg"
+                                alt="Generic placeholder image">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="mt-0 card-title">Karthik Sarode</h3>
+                            <p>Front-end Developer</p>
+                            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repellat qui porro eius
+                                velit?
+                                Voluptas consectetur excepturi magni blanditiis dignissimos!</p>
+                            <article class="text-center pt-3">
+                                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row mt-5" data-aos="zoom-in" data-aos-duration="1000">
-          <div class="col-12 col-sm-12 col-md-4">
-            <img class="align-self-start mr-3" src="https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593358_1280.jpg"  alt="Generic placeholder image" style="width:90%">
-          </div>
-          <div class="col-12 col-sm-12 col-md-8">
-            <h3 class="mt-0">Bilal Bhojani</h3>
-            <p>Front-end Developer</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repellat qui porro eius velit? Voluptas consectetur excepturi magni blanditiis dignissimos!</p>
-            <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
     </div>
     <!--Footer section-->
     <footer>
-      <div class="row" style="margin-right: 0;">
-        <div
-          class="col-10 offset-1 col-sm-4 offset-sm-2 footer-left pt-5 pb-5 order-last"
-        >
-          <a href="#">
-            <p>MEGAPROJECT</p>
-          </a>
-          <a href="/index.html">home</a>
-          <a href="#project">project</a>
-          <a href="#">contact</a>
-          <br />
-          <p>Follow us on :</p>
-          <div class="footer-left-bottom">
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-google"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-youtube"></a>
-          </div>
+        <div class="row" style="margin-right: 0;">
+            <div class="col-10 offset-1 col-sm-4 offset-sm-2 footer-left pt-5 pb-5 order-last">
+                <a href="#">
+                    <p>MEGAPROJECT</p>
+                </a>
+                <a href="/index.html">home</a>
+                <a href="#project">project</a>
+                <a href="#">contact</a>
+                <br />
+                <p>Follow us on :</p>
+                <div class="footer-left-bottom">
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+            <div class="col-10 offset-1 offset-sm-0 col-sm-4 footer-right pt-5 pb-sm-5 order-sm-last">
+                <p>Enquiry Form</p>
+                <form action="">
+                    <div class="row">
+                        <input type="text" name="name" id="name" placeholder="Full Name" />
+                    </div>
+                    <div class="row">
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email" />
+                    </div>
+                    <div class="row">
+                        <input type="tel" name="number" id="number" placeholder="Enter Mobile Number" />
+                    </div>
+                    <div class="row">
+                        <button type="submit">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div
-          class="col-10 offset-1 offset-sm-0 col-sm-4 footer-right pt-5 pb-sm-5 order-sm-last"
-        >
-          <p>Enquiry Form</p>
-          <form action="">
-            <div class="row">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Full Name"
-              />
-            </div>
-            <div class="row">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter Your Email"
-              />
-            </div>
-            <div class="row">
-              <input
-                type="tel"
-                name="number"
-                id="number"
-                placeholder="Enter Mobile Number"
-              />
-            </div>
-            <div class="row">
-              <button type="submit">SUBMIT</button>
-            </div>
-          </form>
-        </div>
-      </div>
     </footer>
 
     <!-- jQuery library -->
@@ -383,7 +295,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
     <script>
-      AOS.init();
+        AOS.init();
     </script>
-  </body>
+</body>
+
 </html>
