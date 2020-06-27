@@ -1,8 +1,9 @@
 .calculator-main{
-    background-color: #dbdcdb;
+    background-color: rgba(0, 0, 0, 0.8);
+    color:white
 }
 .calculator-main  h2{
-    color:#1f2833;
+    color:#66fcf1;
     text-transform:uppercase;
     text-align: center;
     padding:25px 0 0 0;
@@ -14,6 +15,10 @@
 }
 .calculator-main .form{
     padding:10px 10px 0 10px;
+}
+
+.calc .card-header{
+    background-color: #1f2833;
 }
 .calculator-main .card input{
     width: 100%;
@@ -46,4 +51,13 @@
 .calculator-main .card .card-body .card-body-button .col-3 button:hover{
     color: #45a29e;
 
+}
+.content{
+    padding-left: 15px;
+}
+.content li{
+    list-style: none;
+}
+.content i{
+    color:#66fcf1;margin-right:8px
 }
