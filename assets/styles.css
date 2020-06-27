@@ -218,17 +218,12 @@ footer .footer-right form button {
 }
 
 /*project css*/
-/* @font-face {
-  font-family: "andromedamedium";
-  src: url("andromeda-er2n-webfont.woff2") format("woff2"),
-    url("andromeda-er2n-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-.card {
+#project .card,
+#team .card {
   border: 2px solid rgba(0, 0, 0, 0.9);
 }
-.card .card-body a {
+#project .card .card-body a,
+#team .card .card-body a {
   background-color: rgb(48, 122, 117);
   border: 1px solid #66fcf1;
   color: white;
@@ -242,10 +237,11 @@ footer .footer-right form button {
   color: #66fcf1;
   padding-bottom: 25px;
 }
-.card-body {
+#project .card-body,
+#team .card-body {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
-} */
+}
 /*team*/
 /* .teamsection{
     background-color: rgba(0, 0, 0, 0.7);
