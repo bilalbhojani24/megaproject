@@ -1,8 +1,8 @@
 .budget-main{
-    background-color: #dbdcdb;
+    background-color: rgba(0, 0, 0,0.8);
 }
 .budget-main  h2{
-    color:#1f2833;
+    color:#66fcf1;
     text-transform:uppercase;
     text-align: center;
     padding:25px 0 0 0;
@@ -15,6 +15,9 @@
 .budget-main .form{
     padding:10px 10px 0 10px;
 }
+.budget-main .form label{
+    color:white
+}
 .budget-main .form input{
     width: 100%;
     padding:5px 5px;
@@ -24,8 +27,8 @@
     color:gray
 }
 .budget-main .form .card .card-header{
-    background-color: rgba(0, 0, 0,0.7);
-    color:#66fcf1
+    background-color: rgba(0, 0, 0,0.8);
+    color:white
 }
 
 .row .col-12 .custom-btn{
@@ -63,3 +66,17 @@
     color:red;
     cursor: pointer;
 }
+
+
+.content{
+    padding-left: 15px;
+}
+.content li{
+    list-style: none;
+    color:white;
+}
+.content i{
+    color:#66fcf1;margin-right:8px
+}
+
+

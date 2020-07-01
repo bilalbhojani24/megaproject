@@ -1,8 +1,8 @@
 .main{
-    background-color: #dbdcdb;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .main .todo-main h2{
-    color:#1f2833;
+    color:#66fcf1;
     text-transform:uppercase;
     text-align: center;
     padding:25px 0 0 0;
@@ -15,6 +15,7 @@
 
 .head-ing{ 
     text-align: center;
+    color:#66fcf1;
     font-size: 3rem;
     padding:25px 0;
  } 
@@ -76,6 +77,26 @@
     color:#66fcf1;
     color:green
 }
+
+
+
+
+.content{
+    padding-left: 15px;
+}
+.content li{
+    list-style: none;
+    color:white;
+}
+.content i{
+    color:#66fcf1;margin-right:8px
+}
+
+
+
+
+
+
  @media screen and (max-width: 576px) {
     .row .col-12 .row .col-12 .row .custom-input{
         padding-right: 15px;

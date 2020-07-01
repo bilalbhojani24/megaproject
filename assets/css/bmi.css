@@ -1,8 +1,8 @@
 .main{
-    background-color: #dbdcdb;
+    background-color: rgba(0, 0, 0,0.8);
 }
 .main .BMI-main h2{
-    color:#1f2833;
+    color:#66fcf1;
     text-transform:uppercase;
     text-align: center;
     padding:25px 0 0 0;
@@ -14,6 +14,9 @@
 }
 .BMI-main .form{
     padding:50px 10px 0 10px;
+}
+.BMI-main .form label{
+    color:white
 }
 .BMI-main .form input,select{
     width: 100%;
@@ -32,3 +35,16 @@
 .row .col-12 .custom-btn:hover{
     color: #45a29e;
 }
+
+.content{
+    padding-left: 15px;
+}
+.content li{
+    list-style: none;
+    color:white;
+}
+.content i{
+    color:#66fcf1;margin-right:8px
+}
+
+
