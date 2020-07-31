@@ -27,8 +27,8 @@
             <a href="../index.html" class="navbar-brand">Megaproject</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"
                 class="float-right">
-                 <!-- <span class="navbar-toggler-icon"></span> -->
-          <i class="fa fa-bars" aria-hidden="true"></i>
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fa fa-bars" aria-hidden="true"></i>
             </button>
             <div id="Navbar" class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav">
@@ -41,8 +41,8 @@
             </div>
         </div>
     </nav>
-     <!--Modal for signup-->
-     <div class="modal" role="dialog" id="signupmodal">
+    <!--Modal for signup-->
+    <div class="modal" role="dialog" id="signupmodal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -96,7 +96,7 @@
                 <div class="modal-footer">
                     <div class="row justify-content-center">
                         <div class="col-6 col-sm-6 col-lg-6">
-                            <button class="btn" >SignUp</button>
+                            <button class="btn">SignUp</button>
                         </div>
                         <div class="col-6 col-sm-6 col-lg-6">
                             <button class="btn " data-dismiss="modal">Cancel</button>
@@ -111,7 +111,8 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6">
                     <h2>BMI Calculator</h2>
-                    <p style="text-align: justify; font-size: 16px;color:white" >Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.
+                    <p style="text-align: justify; font-size: 16px;color:white">Body mass index (BMI) is a measure of
+                        body fat based on height and weight that applies to adult men and women.
                     <section class="content">
                         <li>
                             <i class="fa fa-arrow-circle-right"></i>
@@ -135,10 +136,13 @@
                     </section>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
-                        <h2 class="pb-4">Video Demonstration</h2>
-                        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/RrYGpgyAsdI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h2 class="pb-4">Video Demonstration</h2>
+                    <video width="100%" height="300px" controls>
+                        <source src="../assets/images/videos/BMI_calc_1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
-                
+
                 <div class="col-12 col-sm-12 col-md-6 offset-md-3">
                     <h2>BMI calculator</h2>
                     <div class="form">
@@ -147,7 +151,8 @@
                                 <label>Height</label>
                             </div>
                             <div class="col-12 col-sm-7">
-                                <input type="text" class="form-control" name="height" id="height" placeholder="Height in cms">
+                                <input type="text" class="form-control" name="height" id="height"
+                                    placeholder="Height in cms">
                             </div>
                         </div>
                         <div class="row pb-3">
@@ -155,7 +160,8 @@
                                 <label>Weight</label>
                             </div>
                             <div class="col-12 col-sm-7">
-                                <input type="text" class="form-control" name="weight" id="weight" placeholder="Weight in Kg">
+                                <input type="text" class="form-control" name="weight" id="weight"
+                                    placeholder="Weight in Kg">
                             </div>
                         </div>
                         <div class="row pb-5">
@@ -176,7 +182,7 @@
                         <div class="row pb-5">
                             <div class="col-12 ">
                                 <button class="btn btn-primary custom-btn" style="padding: 5px 20px;" onclick="bmi()">
-                                        Calculate
+                                    Calculate
                                 </button>
                             </div>
                         </div>
