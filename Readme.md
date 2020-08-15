@@ -7,7 +7,7 @@
   <li>TO-DO application</li>
   <li>Basic calculator</li>
   <li>Tip calculator </li>
-  <li>BMI calculator</li>>
+  <li>BMI calculator</li>
   <li>Budget application</li>
   <li>School grade calculator</li>
 </ul>
